@@ -11,6 +11,6 @@ $(function(){
 					$('#scroll').fadeOut( "slow" );
 				}
 				if (item.newtext) {
-				$("#message").text(item.newtext)
+				$("#message").html("<strong>"+item.newtext+"</strong>")
 				}
 			}
