@@ -10,4 +10,7 @@ $(function(){
 				} else if (item.display === false) {
 					$('#scroll').fadeOut( "slow" );
 				}
+				if (item.newtext) {
+				$("#message").html("<strong>"+item.newtext+"</strong>")
+				}
 			}

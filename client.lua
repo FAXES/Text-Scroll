@@ -34,3 +34,8 @@ function ShowInfo(text, state)
   AddTextComponentString(text)
   DisplayHelpTextFromStringLabel(0, state, 0, -1)
 end
+
+RegisterCommand("scroll",function(source,args,raw) 
+	msg = string.gsub(raw,8)
+	SendNUIMessage({newtext=msg})
+end,true)
